@@ -162,7 +162,7 @@ export default function Pricing() {
 
                   {/* Back */}
                   <div className="flip-back absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                    <div className={`${backCardClasses} flex flex-col h-full`}>
+                    <div className={`${backCardClasses} flex flex-col h-full relative`}>
                       {isSpecial && (
                         <div className="text-center mb-4">
                           <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
@@ -171,17 +171,18 @@ export default function Pricing() {
                         </div>
                       )}
                       <h3 className={titleClasses}>{service.title}</h3>
-                      <ul className="space-y-2 text-cyber-text text-sm sm:text-base mt-4 flex-1">
-                        {service.backFeatures.map((feature, fIndex) => (
-                          <li key={fIndex} className="flex items-start">
-                            <CheckIcon />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <div className="flex-1 flex flex-col justify-end pt-4 px-2">
-                      <div className="space-y-2">
-
+                      <div className="flex-grow mt-4 mb-8 overflow-y-auto max-h-[60%]">
+                        <ul className="space-y-2 text-cyber-text text-sm sm:text-base">
+                          {service.backFeatures.map((feature, fIndex) => (
+                            <li key={fIndex} className="flex items-start">
+                              <CheckIcon />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="absolute bottom-6 left-0 right-0 px-2">
+                        <div className="space-y-2">
                           <button
                             onClick={() => toggleFlip(index)}
                             className="w-full py-2.5 rounded-lg font-semibold transition-all bg-white/10 backdrop-blur-sm text-white back-btn text-sm border border-white/20 hover:bg-white/20"

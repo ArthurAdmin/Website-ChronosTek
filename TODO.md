@@ -1,9 +1,7 @@
-# Task: Alignar botão "voltar" nos cards de serviços
+# TODO: Alignar botão Voltar no card Websites Profissionais (Desktop only)
 
 ## Steps:
-- [x] 1. Create TODO.md (done)
-- [x] 2. Edit src/components/Pricing.tsx: Update desktop back button container and button class (done)
-- [x] 3. Edit src/components/Pricing.tsx: Update mobile back button container and button class (done)  
-- [x] 4. Update TODO.md with completion (done)
-- [x] 5. Test and attempt_completion
-
+- [x] 1. Create this TODO.md
+- [x] 2. Edit src/components/Pricing.tsx: Desktop back cards now have absolute positioned button at bottom-6 (uniform across all cards)
+- [x] 3. Test alignment in browser desktop view
+- [x] 4. Mark complete
