@@ -171,16 +171,14 @@ export default function Pricing() {
                         </div>
                       )}
                       <h3 className={titleClasses}>{service.title}</h3>
-                      <div className="flex-grow mt-4 mb-8 overflow-y-auto max-h-[60%]">
-                        <ul className="space-y-2 text-cyber-text text-sm sm:text-base">
-                          {service.backFeatures.map((feature, fIndex) => (
-                            <li key={fIndex} className="flex items-start">
-                              <CheckIcon />
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      <ul className="space-y-2 text-cyber-text text-sm sm:text-base mt-4 flex-grow">
+                        {service.backFeatures.map((feature, fIndex) => (
+                          <li key={fIndex} className="flex items-start">
+                            <CheckIcon />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
                       <div className="absolute bottom-6 left-0 right-0 px-2">
                         <div className="space-y-2">
                           <button
