@@ -16,14 +16,14 @@ export default function Header() {
               <img 
                 src="/ChronosTekLogo.png" 
                 alt="ChronosTek Logo" 
-                className="w-10 h-10 object-contain"
+                className="w-10 h-10 sm:w-12 xl:w-14 object-contain"
               />
               <span className="text-white font-bold text-xl">ChronosTek</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 xl:space-x-12">
             <Link href="#features" className="text-cyber-text hover:text-cyber-blue transition-colors">
               Funcionalidades
             </Link>

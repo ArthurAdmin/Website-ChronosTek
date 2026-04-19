@@ -37,7 +37,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
               Sobre a <span className="gradient-text">ChronosTek</span>
             </h2>
             <p className="text-base sm:text-lg text-cyber-textMuted mb-4 sm:mb-6">
@@ -109,7 +109,7 @@ export default function About() {
             </div>
 
             {/* Benefits - Desktop Grid */}
-            <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 xl:gap-8 gap-4 sm:gap-6">
               {benefits.map((benefit, index) => (
                 <div key={index} className="cyber-card p-4 sm:p-6 text-center">
                   <div className="text-2xl sm:text-3xl font-bold text-cyber-blue mb-2">{benefit.title}</div>
