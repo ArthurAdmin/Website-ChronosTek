@@ -31,7 +31,7 @@ export default function Header() {
               Sobre Nós
             </Link>
             <Link href="#pricing" className="text-cyber-text hover:text-cyber-blue transition-colors">
-              Planos
+              Serviços
             </Link>
             <Link href="#contact" className="text-cyber-text hover:text-cyber-blue transition-colors">
               Contato
