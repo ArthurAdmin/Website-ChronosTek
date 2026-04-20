@@ -99,6 +99,20 @@ export default function Contact() {
                   <p className="text-cyber-textMuted text-sm sm:text-base">Atendimento Nacional</p>
                 </div>
               </div>
+
+              {/* Suporte Block */}
+              <div className="mt-8 pt-6 border-t border-cyber-border/50">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Precisa de ajuda?</h3>
+                <p className="text-cyber-textMuted text-sm sm:text-base mb-6 leading-relaxed">Ficou com alguma dúvida? Fale diretamente com nosso suporte.</p>
+                <a
+                  href="https://wa.me/5521976714989?text=Ol%C3%A1%2C%20preciso%20de%20ajuda."
+                  className="block w-full btn-primary btn-glow py-4 min-h-[56px] text-base sm:text-lg text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar no WhatsApp
+                </a>
+              </div>
             </div>
           </div>
 

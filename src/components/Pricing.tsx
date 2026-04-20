@@ -18,7 +18,7 @@ const services: Service[] = [
     subtitle: "Aquisição de clientes",
     frontFeatures: ["Estratégias de tráfego pago (Ads) e SEO", "Leads qualificados para o funil"],
     backFeatures: ["Gestão estratégica de tráfego pago (Google/Meta)", "Foco total em ROI e redução de custo por lead", "Estratégias de SEO", "Análise de métricas para escala"],
-    demoLink: "#demo-marketing",
+    demoLink: "https://wa.me/5521969946426",
     isSpecial: false,
   },
   {
@@ -27,7 +27,7 @@ const services: Service[] = [
     subtitle: "Presença Digital e Conversão",
     frontFeatures: ["Sites otimizados mobile", "Integrados ao fluxo de vendas"],
     backFeatures: ["Landing Pages de alta conversão", "Design ultra veloz otimizado para mobile", "Copywriting focado em vendas", "Integração direta com o CRM"],
-    demoLink: "#demo-websites",
+    demoLink: "https://wa.me/5521969946426",
     isSpecial: false,
   },
   {
@@ -36,7 +36,7 @@ const services: Service[] = [
     subtitle: "O centro da sua operação",
     frontFeatures: ["Motor central: Leads, funil e vendas", "Relatórios em tempo real"],
     backFeatures: ["Dashboards de performance em tempo real", "Gestão centralizada de leads e funis", "Histórico inteligente de interações", "Interface focada em produtividade"],
-    demoLink: "#demo-crm",
+    demoLink: "https://wa.me/5521969946426",
     isSpecial: false,
   },
   {
@@ -45,7 +45,7 @@ const services: Service[] = [
     subtitle: "Experiência e Escalabilidade",
     frontFeatures: ["Apps Web e Mobile sob medida", "Digitalize seus processos"],
     backFeatures: ["Desenvolvimento de Apps (Web/Mobile) sob medida", "Sistemas SaaS multi-tenant", "Foco em UX/UI de alta retenção", "Arquitetura escalável"],
-    demoLink: "#demo-apps",
+    demoLink: "https://wa.me/5521969946426",
     isSpecial: false,
   },
   {
@@ -54,7 +54,7 @@ const services: Service[] = [
     subtitle: "Eficiência e Ganho de Tempo",
     frontFeatures: ["WhatsApp, propostas e follow-up auto", "Régua de pós-venda"],
     backFeatures: ["Atendimento 24h via WhatsApp", "Envio automático de propostas/PDFs", "Régua de cobrança e pós-venda", "Integrações via API (Zapier/Make)"],
-    demoLink: "#demo-automacao",
+    demoLink: "https://wa.me/5521969946426",
     isSpecial: false,
   },
 ];
