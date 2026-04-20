@@ -37,17 +37,16 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6">
               Sobre a <span className="gradient-text">ChronosTek</span>
             </h2>
             <p className="text-base sm:text-lg text-cyber-textMuted mb-4 sm:mb-6">
-              A Chronos Tek é uma plataforma SaaS que ajuda sua empresa a crescer com previsibilidade,
-              reduzir cancelamentos e aumentar a receita recorrente.
+              A ChronosTek é uma empresa de tecnologia SaaS focada em transformar crescimento em algo previsível, mensurável e escalável. Nosso objetivo não é apenas aumentar números, mas construir operações sólidas, capazes de crescer com consistência e inteligência.
             </p>
             <p className="text-base sm:text-lg text-cyber-textMuted mb-6 sm:mb-8">
-              Transformamos dados em decisões estratégicas. Nossa plataforma monitora as métricas mais 
-              importantes do seu negócio, identifica riscos antes que eles se tornem problemas e ajuda 
-              você a construir uma base de clientes mais sólida e lucrativa.
+              Trabalhamos com dados reais do seu negócio para gerar clareza nas decisões. Através de métricas como MRR, CAC, LTV, churn e retenção, identificamos gargalos, antecipamos riscos e revelamos oportunidades que muitas vezes passam despercebidas.
+             
+             Mais do que uma ferramenta, entregamos uma estrutura. Organizamos processos, fortalecemos a base de clientes e criamos estratégias que sustentam o crescimento a longo prazo.
             </p>
 
             {/* Benefits - Mobile Carousel */}
@@ -109,7 +108,7 @@ export default function About() {
             </div>
 
             {/* Benefits - Desktop Grid */}
-            <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 xl:gap-8 gap-4 sm:gap-6">
               {benefits.map((benefit, index) => (
                 <div key={index} className="cyber-card p-4 sm:p-6 text-center">
                   <div className="text-2xl sm:text-3xl font-bold text-cyber-blue mb-2">{benefit.title}</div>

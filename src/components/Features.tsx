@@ -75,7 +75,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4">
             Por Que Escolher a <span className="gradient-text">ChronosTek</span>
           </h2>
           <p className="text-sm sm:text-base md:text-xl text-cyber-textMuted max-w-3xl mx-auto">
@@ -85,7 +85,7 @@ export default function Features() {
         </div>
 
         {/* Desktop: Grid layout */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-10 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}

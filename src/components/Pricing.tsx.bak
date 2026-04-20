@@ -1,0 +1,196 @@
+'use client';
+import { useState } from "react";
+
+interface Service {
+  id: number;
+  title: string;
+  subtitle: string;
+  frontFeatures: string[];
+  backFeatures: string[];
+  demoLink: string;
+  isSpecial: boolean;
+}
+
+const services: Service[] = [
+  {
+    id: 0,
+    title: "Marketing & Performance",
+    subtitle: "Aquisição de clientes",
+    frontFeatures: ["Estratégias de tráfego pago (Ads) e SEO", "Leads qualificados para o funil"],
+    backFeatures: ["Gestão estratégica de tráfego pago (Google/Meta)", "Foco total em ROI e redução de custo por lead", "Estratégias de SEO", "Análise de métricas para escala"],
+    demoLink: "#demo-marketing",
+    isSpecial: false,
+  },
+  {
+    id: 1,
+    title: "Websites Profissionais & Landing Pages",
+    subtitle: "Presença Digital e Conversão",
+    frontFeatures: ["Sites otimizados mobile", "Integrados ao fluxo de vendas"],
+    backFeatures: ["Landing Pages de alta conversão", "Design ultra veloz otimizado para mobile", "Copywriting focado em vendas", "Integração direta com o CRM"],
+    demoLink: "#demo-websites",
+    isSpecial: false,
+  },
+  {
+    id: 2,
+    title: "CRM ChronosTek",
+    subtitle: "O centro da sua operação",
+    frontFeatures: ["Motor central: Leads, funil e vendas", "Relatórios em tempo real"],
+    backFeatures: ["Dashboards de performance em tempo real", "Gestão centralizada de leads e funis", "Histórico inteligente de interações", "Interface focada em produtividade"],
+    demoLink: "#demo-crm",
+    isSpecial: false,
+  },
+  {
+    id: 3,
+    title: "Aplicativos Customizados",
+    subtitle: "Experiência e Escalabilidade",
+    frontFeatures: ["Apps Web e Mobile sob medida", "Digitalize seus processos"],
+    backFeatures: ["Desenvolvimento de Apps (Web/Mobile) sob medida", "Sistemas SaaS multi-tenant", "Foco em UX/UI de alta retenção", "Arquitetura escalável"],
+    demoLink: "#demo-apps",
+    isSpecial: false,
+  },
+  {
+    id: 4,
+    title: "Automação de Processos",
+    subtitle: "Eficiência e Ganho de Tempo",
+    frontFeatures: ["WhatsApp, propostas e follow-up auto", "Régua de pós-venda"],
+    backFeatures: ["Atendimento 24h via WhatsApp", "Envio automático de propostas/PDFs", "Régua de cobrança e pós-venda", "Integrações via API (Zapier/Make)"],
+    demoLink: "#demo-automacao",
+    isSpecial: false,
+  },
+];
+
+export default function Pricing() {
+  const [flippedStates, setFlippedStates] = useState<boolean[]>([false, false, false, false, false]);
+
+  const toggleFlip = (index: number) => {
+    setFlippedStates((prev) => prev.map((flipped, i) => (i === index ? !flipped : flipped)));
+  };
+
+  const CheckIcon = () => (
+    <svg
+      className="w-5 h-5 text-cyber-blue mr-3 flex-shrink-0 mt-0.5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    </svg>
+  );
+
+  return (
+    <section id="pricing" className="py-8 sm:py-12 md:py-16 lg:py-24 bg-cyber-darkSecondary">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            Nossos <span className="gradient-text">Serviços</span>
+          </h2>
+          <p className="text-sm sm:text-base md:text-xl text-cyber-textMuted max-w-3xl mx-auto">
+            Soluções completas para transformar seu negócio digitalmente.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
+          {services.map((service, index) => {
+            const isFlipped = flippedStates[index];
+            const isSpecial = service.isSpecial;
+            const isCrm = service.id === 2;
+            const baseCardClasses = "cyber-card card-hover flex flex-col h-full p-6 sm:p-8";
+            const crmSpecialClasses = isCrm ? 'relative bg-cyber-darkSecondary/95 border border-cyber-blue/30 shadow-[0_0_20px_rgba(0,212,255,0.15)] hover:-translate-y-3 hover:shadow-[0_0_30px_rgba(0,212,255,0.3)] hover:border-cyber-blue/50' : '';
+            const frontCardClasses = \`\${baseCardClasses} \${crmSpecialClasses}\`;
+            const cardClasses = `cyber-card card-hover flex flex-col h-full p-6 sm:p-8 relative \${isCrm ? 'bg-[color-mix(in srgb,theme(colors.cyber.darkSecondary) 95%,white)] border border-cyber-blue/30 shadow-[0_0_20px_theme(colors.cyber.blue/0.1)] hover:-translate-y-3 hover:shadow-glow-blue-lg hover:border-cyber-blue/50 hover:shadow-[0_0_30px_theme(colors.cyber.blue/0.2)]' : ''}`;
+            const frontCardClasses = cardClasses;
+            const backCardClasses = \`\${baseCardClasses} \${crmSpecialClasses} flex flex-col h-full\`;
+            const titleClasses = "text-xl sm:text-2xl font-bold text-white mb-3";
+            const subtitleClasses = "text-lg font-bold gradient-text mb-4";
+            const ulClasses = "space-y-2 mb-6 text-sm sm:text-base";
+
+            return (
+              <div key={service.id} className="h-[480px] sm:h-[520px] lg:h-[560px] flip-container [perspective:1000px]">
+                <div
+                  className={`flip-inner w-full h-full transition-transform duration-[0.6s] [transform-style:preserve-3d] ${
+                    isFlipped ? "flipped" : ""
+                  }`}
+                >
+                  {/* Front */}
+                  <div className="flip-front absolute w-full h-full [backface-visibility:hidden]">
+                    <div className={frontCardClasses}>
+                      {isSpecial && (
+                        <div className="text-center mb-4">
+                          <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
+                            ★ O Coração da Operação
+                          </span>
+                        </div>
+                      )}
+                      <h3 className={titleClasses}>{service.title}</h3>
+                      <div className="mb-4">
+                        <span className={subtitleClasses}>{service.subtitle}</span>
+                      </div>
+                      <ul className={ulClasses}>
+                        {service.frontFeatures.map((feature, fIndex) => (
+                          <li key={fIndex} className="flex items-start text-cyber-text">
+                            <CheckIcon />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="flex-1 flex flex-col justify-end pt-4 px-2">
+                        <div className="space-y-2">
+                          <button
+                            onClick={() => toggleFlip(index)}
+                            className="w-full py-2.5 rounded-lg font-semibold transition-all show-more-btn text-sm"
+                          >
+                            + Mostrar mais
+                          </button>
+                          <a
+                            href={service.demoLink}
+                            className="block w-full py-2.5 rounded-lg font-semibold transition-all text-center bg-gradient-to-r from-cyber-blue/20 to-cyber-purple/20 border border-cyber-blue/50 text-cyber-blue hover:bg-cyber-blue/30 hover:text-white demo-btn text-sm"
+                          >
+                            ▶ Ver Demonstração
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Back */}
+                  <div className="flip-back absolute w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className={`${backCardClasses} flex flex-col h-full`}>
+                      {isSpecial && (
+                        <div className="text-center mb-4">
+                          <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
+                            ★ O Coração da Operação
+                          </span>
+                        </div>
+                      )}
+                      <h3 className={titleClasses}>{service.title}</h3>
+                      <ul className="space-y-2 text-cyber-text text-sm sm:text-base mt-4">
+                        {service.backFeatures.map((feature, fIndex) => (
+                          <li key={fIndex} className="flex items-start">
+                            <CheckIcon />
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="flex-1 flex flex-col justify-end pt-4 px-2">
+                        <div className="flex justify-center space-x-3 pt-2">
+
+                          <button
+                            onClick={() => toggleFlip(index)}
+                            className="px-6 py-2.5 rounded-lg font-semibold transition-all bg-white/10 backdrop-blur-sm text-white back-btn text-sm border border-white/20 hover:bg-white/20"
+                          >
+                            ← Voltar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+

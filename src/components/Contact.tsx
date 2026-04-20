@@ -45,10 +45,10 @@ export default function Contact() {
   };
   return (
     <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-24 bg-cyber-darkSecondary">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12">
         {/* Section header */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4">
             Entre em <span className="gradient-text">Contato</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-cyber-textMuted max-w-2xl md:max-w-3xl mx-auto">
@@ -71,7 +71,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1">Email</h4>
-                  <p className="text-cyber-textMuted text-sm sm:text-base">chronostecch@gmail.com</p>
+                  <p className="text-cyber-textMuted text-sm sm:text-base">contato@chronostek.com.br</p>
                 </div>
               </div>
 
@@ -99,6 +99,20 @@ export default function Contact() {
                   <p className="text-cyber-textMuted text-sm sm:text-base">Atendimento Nacional</p>
                 </div>
               </div>
+
+              {/* Suporte Block */}
+              <div className="mt-8 pt-6 border-t border-cyber-border/50">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Precisa de ajuda?</h3>
+                <p className="text-cyber-textMuted text-sm sm:text-base mb-6 leading-relaxed">Ficou com alguma dúvida? Fale diretamente com nosso suporte.</p>
+                <a
+                  href="https://wa.me/5521976714989?text=Ol%C3%A1%2C%20preciso%20de%20ajuda."
+                  className="block w-full btn-primary btn-glow py-4 min-h-[56px] text-base sm:text-lg text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar no WhatsApp
+                </a>
+              </div>
             </div>
           </div>
 
@@ -106,7 +120,7 @@ export default function Contact() {
           <div className="cyber-card p-4 sm:p-6 md:p-8">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Envie uma Mensagem</h3>
 <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:gap-8 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-cyber-text mb-2">
                     Nome

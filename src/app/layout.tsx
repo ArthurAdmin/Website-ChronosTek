@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   description: 'Proteja sua empresa com soluções avançadas de cibersegurança. Monitoramento 24/7, proteção contra ameaças e compliance.',
   keywords: 'cibersegurança, segurança digital, proteção de dados, monitoramento, ChronosTech',
   authors: [{ name: 'ChronosTech' }],
+  icons: {
+    icon: '/ChronosTekLogo.png'
+  },
   openGraph: {
     title: 'ChronosTech - Soluções de Cibersegurança',
     description: 'Proteja sua empresa com soluções avançadas de cibersegurança.',

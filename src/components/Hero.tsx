@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center pt-16 sm:pt-8 overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center pt-24 lg:pt-28 overflow-visible">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-cyber-dark via-cyber-darkSecondary to-cyber-dark" />
       <div className="absolute inset-0 bg-glow-pattern" />
@@ -16,15 +16,15 @@ export default function Hero() {
         backgroundSize: '50px 50px'
       }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 mb-6 sm:mb-8">
+        <div className="inline-flex items-center px-2.5 py-1 lg:px-4 lg:py-2 rounded-full bg-cyber-blue/10 border border-cyber-blue/30 mb-16 xl:mb-20">
           <span className="w-2 h-2 rounded-full bg-cyber-blue animate-pulse mr-2"></span>
-          <span className="text-cyber-blue text-xs sm:text-sm font-medium">Plataforma de Monitoramento e Gestão para Empresas</span>
+          <span className="text-cyber-blue text-xs lg:text-sm font-medium whitespace-nowrap">Plataforma de Monitoramento e Gestão para Empresas</span>
         </div>
 
         {/* Main heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight">
           Crescimento Estruturado
           <span className="block gradient-text">e Previsível</span>
         </h1>

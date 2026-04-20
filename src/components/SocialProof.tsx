@@ -31,7 +31,7 @@ export default function SocialProof() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4">
             Empresas que <span className="gradient-text">Confiam</span> na ChronosTek
           </h2>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-cyber-textMuted max-w-3xl mx-auto">
@@ -40,7 +40,7 @@ export default function SocialProof() {
         </div>
 
         {/* Company logos */}
-        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-16 mb-10 sm:mb-12 md:mb-16 opacity-70">
+        <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-16 xl:gap-20 mb-10 sm:mb-12 md:mb-16 opacity-70">
           {companies.map((company, index) => (
             <div key={index} className="text-lg sm:text-xl md:text-2xl font-bold text-cyber-textMuted hover:text-cyber-blue transition-colors">
               {company}
@@ -49,7 +49,7 @@ export default function SocialProof() {
         </div>
 
         {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:gap-10 gap-4 sm:gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="cyber-card card-hover p-4 sm:p-6 lg:p-8">
               {/* Quote icon */}
