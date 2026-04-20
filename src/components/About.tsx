@@ -41,13 +41,12 @@ export default function About() {
               Sobre a <span className="gradient-text">ChronosTek</span>
             </h2>
             <p className="text-base sm:text-lg text-cyber-textMuted mb-4 sm:mb-6">
-              A Chronos Tek é uma plataforma SaaS que ajuda sua empresa a crescer com previsibilidade,
-              reduzir cancelamentos e aumentar a receita recorrente.
+              A ChronosTek é uma empresa de tecnologia SaaS focada em transformar crescimento em algo previsível, mensurável e escalável. Nosso objetivo não é apenas aumentar números, mas construir operações sólidas, capazes de crescer com consistência e inteligência.
             </p>
             <p className="text-base sm:text-lg text-cyber-textMuted mb-6 sm:mb-8">
-              Transformamos dados em decisões estratégicas. Nossa plataforma monitora as métricas mais 
-              importantes do seu negócio, identifica riscos antes que eles se tornem problemas e ajuda 
-              você a construir uma base de clientes mais sólida e lucrativa.
+              Trabalhamos com dados reais do seu negócio para gerar clareza nas decisões. Através de métricas como MRR, CAC, LTV, churn e retenção, identificamos gargalos, antecipamos riscos e revelamos oportunidades que muitas vezes passam despercebidas.
+             
+             Mais do que uma ferramenta, entregamos uma estrutura. Organizamos processos, fortalecemos a base de clientes e criamos estratégias que sustentam o crescimento a longo prazo.
             </p>
 
             {/* Benefits - Mobile Carousel */}

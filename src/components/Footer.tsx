@@ -13,12 +13,8 @@ export default function Footer() {
               />
               <h3 className="text-white font-bold text-lg">ChronosTek</h3>
             </div>
-            <p className="text-cyber-textMuted mb-4 max-w-md">
-              Ajudamos empresas a crescer com previsibilidade, reduzir cancelamentos e aumentar a receita.
-              Transformamos dados em decisões estratégicas para que você possa construir uma base de 
-              clientes mais sólida e lucrativa, com operações organizadas e crescimento sustentável.
-            </p>
             <h4 className="text-white font-semibold mb-3 sm:mb-4">Siga-nos</h4>
+
             <div className="flex space-x-3 sm:space-x-4">
               <a href="#" className="text-cyber-textMuted hover:text-cyber-blue transition-colors touch-manipulation p-2">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
